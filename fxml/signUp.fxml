@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="778.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginproject.signUpController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="436.0" layoutX="-2.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Creativity-pana.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="372.0" layoutY="43.0" text="Sign Up" textFill="#4317bc">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="105.0" text="First Name">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" layoutX="376.0" layoutY="129.0" prefHeight="48.0" prefWidth="153.0" promptText="First Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="573.0" layoutY="105.0" text="Last Name">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastName" layoutX="573.0" layoutY="129.0" prefHeight="48.0" prefWidth="153.0" promptText="Last Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="379.0" layoutY="194.0" prefHeight="7.0" prefWidth="121.0" text="Your Email">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="379.0" layoutY="218.0" prefHeight="48.0" prefWidth="354.0" promptText="Your Email">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="379.0" layoutY="280.0" prefHeight="7.0" prefWidth="121.0" text="Password">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="379.0" layoutY="304.0" onAction="#passwordFiledEvent" prefHeight="48.0" prefWidth="354.0" promptText="Your Password">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></PasswordField>
+      <Label layoutX="379.0" layoutY="364.0" prefHeight="17.0" prefWidth="137.0" text="Confirm Password">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPassword" layoutX="379.0" layoutY="392.0" prefHeight="48.0" prefWidth="354.0" promptText="Your Password">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></PasswordField>
+      <Button fx:id="loginButton" layoutX="467.0" layoutY="476.0" mnemonicParsing="false" onAction="#signUpEvent" prefHeight="41.0" prefWidth="142.0" style="-fx-background-color: #4317bc;" styleClass="pill-button" stylesheets="@style.css" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="warningLabel" layoutX="414.0" layoutY="449.0" prefHeight="18.0" prefWidth="249.0" textFill="#ec0a0a">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
